@@ -8,7 +8,7 @@ export  const API_ENDPOINTS = {
     LOGIN: "/login",
     REGISTER: "/register",
     GET_USER_INFO: "/profile",
-     ACTIVATE: (token) => `/auth/activate?token=${token}`,
+     ACTIVATE: (token) => `/activate?token=${token}`,
     GET_ALL_CATEGORIES: "/categories",
     ADD_CATEGORY: "/categories",
     UPDATE_CATEGORY: (categoryId) => `/categories/${categoryId}`,
