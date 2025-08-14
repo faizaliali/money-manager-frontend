@@ -1,3 +1,4 @@
+//export const BASE_URL="https://money-manager-api-15.onrender.com/api/v1.0";
 export const BASE_URL="http://localhost:8080/api/v1.0";
 const CLOUDINARY_CLOUD_NAME = "dn0jol5ul";
 
@@ -7,6 +8,7 @@ export  const API_ENDPOINTS = {
     LOGIN: "/login",
     REGISTER: "/register",
     GET_USER_INFO: "/profile",
+     ACTIVATE: (token) => `/auth/activate?token=${token}`,
     GET_ALL_CATEGORIES: "/categories",
     ADD_CATEGORY: "/categories",
     UPDATE_CATEGORY: (categoryId) => `/categories/${categoryId}`,
